@@ -1,4 +1,4 @@
-import { apiConfig } from "./constants";
+import { apiConfig } from "./utils";
 
 class Api {
   constructor({ baseUrl, token, groupId }) {

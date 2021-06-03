@@ -1,7 +1,6 @@
-.page__content {
-  max-width: 880px;
+.entry {
+  width: 358px;
   margin: auto;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
