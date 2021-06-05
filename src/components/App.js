@@ -71,6 +71,9 @@ function App() {
     api.toogleLike(card._id, isLiked)
       .then((newCard) => {
         setCards((state) => state.map((c) => c._id === card._id ? newCard : c));
+      })
+      .catch((err) => {
+        console.log(err);
       });
   }
 
@@ -79,6 +82,9 @@ function App() {
       .then(() => {
         setCards((state) => state.filter((c) => c._id !== card._id));
       })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   function handleEditAvatarClick() {
